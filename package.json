@@ -3,6 +3,10 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -11,6 +15,9 @@
 	"license": "ISC",
 	"volta": {
 		"node": "16.15.0",
-		"pnpm": "7.1.7"
+		"yarn": "1.22.17"
+	},
+	"devDependencies": {
+		"lerna": "^4.0.0"
 	}
 }
