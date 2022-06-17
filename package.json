@@ -14,7 +14,9 @@
 		"dev.theme": "lerna exec npm run watch --scope=@xy-design/themes",
 		"build.theme": "lerna exec npm run build --scope=@xy-design/themes",
 		"dev": "concurrently yarn:dev.comp yarn:dev.theme",
-		"build": "concurrently yarn:build.comp yarn:build.theme"
+		"build": "concurrently yarn:build.comp yarn:build.theme",
+		"lint": "prettier --write packages/**/src/**",
+		"prepare": "husky install"
 	},
 	"keywords": [],
 	"author": "",
@@ -33,7 +35,13 @@
 		"gulp-if": "^3.0.0",
 		"gulp-sass": "^5.1.0",
 		"gulp-watch": "^5.0.1",
+		"husky": "^8.0.1",
 		"lerna": "^4.0.0",
-		"onchange": "^7.1.0"
+		"lint-staged": "^13.0.2",
+		"onchange": "^7.1.0",
+		"prettier": "^2.7.1"
+	},
+	"lint-staged": {
+		"packages/**/src/**": "prettier --write"
 	}
 }
