@@ -16,5 +16,10 @@
 	"volta": {
 		"extends": "../../package.json"
 	},
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"@stencil/postcss": "^2.1.0",
+		"@stencil/sass": "^1.5.2",
+		"cssnano": "^5.1.11"
+	}
 }
