@@ -18,8 +18,13 @@
 		"lint": "prettier --write packages/**/src/**",
 		"prepare": "husky install"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"design",
+		"xy-design",
+		"UI",
+		"xy-UI"
+	],
+	"author": "xy",
 	"license": "ISC",
 	"volta": {
 		"node": "16.15.0",
