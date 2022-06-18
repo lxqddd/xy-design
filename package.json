@@ -9,10 +9,10 @@
 	],
 	"scripts": {
 		"dev.comp": "lerna exec npm run start --scope=@xy-design/components",
-		"generate.comp": "lerna exec npm run generate --scope=@xy-design/components",
+		"generate": "lerna exec npm run generate --scope=@xy-design/components",
 		"test": "lerna exec npm run test --scope=@xy-design/components",
 		"dev.theme": "lerna exec npm run watch --scope=@xy-design/themes",
-		"build.theme": "lerna exec npm run build --scope=@xy-design/themes",
+		"build:theme": "lerna exec npm run build --scope=@xy-design/themes",
 		"dev": "concurrently yarn:dev.comp yarn:dev.theme",
 		"build": "concurrently yarn:build.comp yarn:build.theme",
 		"lint": "prettier --write packages/**/src/**",

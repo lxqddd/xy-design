@@ -1,5 +1,5 @@
 const { series, src, dest } = require('gulp')
-const sass = require('gulp-sass')
+const gulpSass = require('gulp-sass')(require('sass'))
 const cached = require('gulp-cached')
 const watch = require('gulp-watch')
 const autoprefixer = require('gulp-autoprefixer')
@@ -7,7 +7,7 @@ const cssmin = require('gulp-cssmin')
 
 function compile() {
 	return src('./src/**/*.scss')
-		.pipe(sass.sync())
+		.pipe(gulpSass.sync())
 		.pipe(
 			autoprefixer({
 				browsers: ['ie > 9', 'last 2 versions'],
@@ -25,7 +25,7 @@ function copyfont() {
 function devCompile() {
 	const path = './src/**/*.scss'
 	return watch(path, { verbose: true }, () => {
-		src(path).pipe(sass.sync()).pipe(dest('./lib'))
+		src(path).pipe(gulpSass.sync()).pipe(dest('./lib'))
 	})
 }
 
