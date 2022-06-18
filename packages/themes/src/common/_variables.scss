@@ -1,8 +1,37 @@
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-  "Liberation Mono", "Courier New", monospace !default;
+// color
+$white: #fff !default;
+$gray-100: #e2e2e2 !default;
+$gray-200: #c6c6c6 !default;
+$gray-300: #ababab !default;
+$gray-400: #919191 !default;
+$gray-500: #777777 !default;
+$gray-600: #5e5e5e !default;
+$gray-700: #474747 !default;
+$gray-800: #303030 !default;
+$gray-900: #1b1b1b !default;
+$black: #000 !default;
+
+$blue: #1a8cff !default;
+$purple: #6f42c1 !default;
+$pink: #f08bb4 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #fadb14 !default;
+$green: #52c41a !default;
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: #909399 !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+// font family
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+	'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 
 // 字体大小
