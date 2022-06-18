@@ -5,8 +5,61 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Size, Type } from "./components/xy-button/types";
 export namespace Components {
     interface XyButton {
+        /**
+          * 是否将按钮展示为块级元素
+         */
+        "block": boolean;
+        /**
+          * 是否是圆形按钮
+         */
+        "circle": boolean;
+        /**
+          * 按钮颜色
+         */
+        "color": string;
+        /**
+          * 边框是否是虚线
+         */
+        "dashed": boolean;
+        /**
+          * 按钮是否禁用
+         */
+        "disabled": boolean;
+        /**
+          * 按钮是否可以被聚焦
+         */
+        "focusable": boolean;
+        /**
+          * 按钮是否透明
+         */
+        "ghost": boolean;
+        /**
+          * 按钮中icon的位置
+         */
+        "iconPlacement": 'left' | 'right';
+        /**
+          * 按钮是否显示加载状态
+         */
+        "loading": boolean;
+        /**
+          * 是否显示为圆角按钮
+         */
+        "round": boolean;
+        /**
+          * 按钮尺寸
+         */
+        "size": Size;
+        /**
+          * 是否显示为文本按钮
+         */
+        "text": boolean;
+        /**
+          * 按钮类型
+         */
+        "type": Type;
     }
 }
 declare global {
@@ -22,6 +75,58 @@ declare global {
 }
 declare namespace LocalJSX {
     interface XyButton {
+        /**
+          * 是否将按钮展示为块级元素
+         */
+        "block"?: boolean;
+        /**
+          * 是否是圆形按钮
+         */
+        "circle"?: boolean;
+        /**
+          * 按钮颜色
+         */
+        "color"?: string;
+        /**
+          * 边框是否是虚线
+         */
+        "dashed"?: boolean;
+        /**
+          * 按钮是否禁用
+         */
+        "disabled"?: boolean;
+        /**
+          * 按钮是否可以被聚焦
+         */
+        "focusable"?: boolean;
+        /**
+          * 按钮是否透明
+         */
+        "ghost"?: boolean;
+        /**
+          * 按钮中icon的位置
+         */
+        "iconPlacement"?: 'left' | 'right';
+        /**
+          * 按钮是否显示加载状态
+         */
+        "loading"?: boolean;
+        /**
+          * 是否显示为圆角按钮
+         */
+        "round"?: boolean;
+        /**
+          * 按钮尺寸
+         */
+        "size"?: Size;
+        /**
+          * 是否显示为文本按钮
+         */
+        "text"?: boolean;
+        /**
+          * 按钮类型
+         */
+        "type"?: Type;
     }
     interface IntrinsicElements {
         "xy-button": XyButton;
