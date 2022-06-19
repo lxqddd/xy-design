@@ -59,6 +59,7 @@ $btn-types: (
 .xy-button {
 	position: relative;
 	outline: none;
+	border: $border-width solid;
 	text-align: center;
 	vertical-align: middle;
 	white-space: nowrap;
@@ -78,6 +79,16 @@ $btn-types: (
 				@include btn-size($btn-padding-y-medium, $btn-padding-x-medium, $btn-font-size-medium, $btn-border-radius-medium);
 			} @else {
 				@include btn-size($btn-padding-y-large, $btn-padding-x-large, $btn-font-size-large, $btn-border-radius-large);
+			}
+		}
+	}
+
+	@each $key, $val in $btn-types {
+		&.#{$key} {
+			@if $key == 'default' {
+				@include btn-type($val, $black, $gray-300);
+			} @else {
+				@include btn-type($val, $white, $val);
 			}
 		}
 	}
