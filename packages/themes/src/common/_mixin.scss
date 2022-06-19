@@ -3,3 +3,28 @@
 	font-size: $font-size;
 	border-radius: $border-radius;
 }
+
+@mixin btn-type($background, $color, $border, $hover-background: lighten($background, 7.5%), $hover-border: lighten($border, 10%), $hover-color: $color) {
+	background: $background;
+	color: $color;
+	border-color: $border;
+	&:hover {
+		background: $hover-background;
+		color: $hover-color;
+		border-color: $hover-border;
+	}
+
+	&:focus,
+	&.focus {
+		background: $background;
+		color: $color;
+		border-color: $border;
+		outline: none;
+	}
+
+	&:disabled {
+		background: $background;
+		color: $color;
+		border-color: $border;
+	}
+}
