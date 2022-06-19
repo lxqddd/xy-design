@@ -39,7 +39,7 @@ export namespace Components {
         /**
           * 按钮中icon的位置
          */
-        "iconPlacement": 'left' | 'right';
+        "iconPlacement": 'left' | 'right' | 'none';
         /**
           * 按钮是否显示加载状态
          */
@@ -106,7 +106,7 @@ declare namespace LocalJSX {
         /**
           * 按钮中icon的位置
          */
-        "iconPlacement"?: 'left' | 'right';
+        "iconPlacement"?: 'left' | 'right' | 'none';
         /**
           * 按钮是否显示加载状态
          */

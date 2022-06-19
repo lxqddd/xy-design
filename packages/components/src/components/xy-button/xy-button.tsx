@@ -54,7 +54,7 @@ export class XyButton {
 	/**
 	 * 按钮中icon的位置
 	 */
-	@Prop() iconPlacement: 'left' | 'right' = 'left'
+	@Prop() iconPlacement: 'left' | 'right' | 'none' = 'none'
 
 	/**
 	 * 按钮是否显示加载状态
@@ -81,9 +81,9 @@ export class XyButton {
 		this.classNames = classnames('xy-button', {
 			[`${this.type}`]: this.type,
 			[`${this.size}`]: this.size,
-			[`${this.block}`]: this.block,
+			[`block`]: this.block,
 			[`${this.circle}`]: this.circle,
-			[`${this.dashed}`]: this.dashed,
+			[`dashed`]: this.dashed,
 			[`${this.disabled}`]: this.disabled,
 			[`${this.focusable}`]: this.focusable,
 			[`${this.ghost}`]: this.ghost,

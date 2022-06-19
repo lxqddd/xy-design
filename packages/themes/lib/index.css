@@ -1,6 +1,7 @@
 .xy-button {
   position: relative;
   outline: none;
+  border: 1px solid;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
@@ -29,4 +30,136 @@
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
+}
+.xy-button.default {
+  background: #fff;
+  color: #000;
+  border-color: #ababab;
+}
+.xy-button.default:hover {
+  background: white;
+  color: #000;
+  border-color: #c5c5c5;
+}
+.xy-button.default:focus, .xy-button.default.focus {
+  background: #fff;
+  color: #000;
+  border-color: #ababab;
+  outline: none;
+}
+.xy-button.default:disabled {
+  background: #fff;
+  color: #000;
+  border-color: #ababab;
+}
+.xy-button.primary {
+  background: #1a8cff;
+  color: #fff;
+  border-color: #1a8cff;
+}
+.xy-button.primary:hover {
+  background: #409fff;
+  color: #fff;
+  border-color: #4da6ff;
+}
+.xy-button.primary:focus, .xy-button.primary.focus {
+  background: #1a8cff;
+  color: #fff;
+  border-color: #1a8cff;
+  outline: none;
+}
+.xy-button.primary:disabled {
+  background: #1a8cff;
+  color: #fff;
+  border-color: #1a8cff;
+}
+.xy-button.info {
+  background: #909399;
+  color: #fff;
+  border-color: #909399;
+}
+.xy-button.info:hover {
+  background: #a4a6ab;
+  color: #fff;
+  border-color: #abadb1;
+}
+.xy-button.info:focus, .xy-button.info.focus {
+  background: #909399;
+  color: #fff;
+  border-color: #909399;
+  outline: none;
+}
+.xy-button.info:disabled {
+  background: #909399;
+  color: #fff;
+  border-color: #909399;
+}
+.xy-button.success {
+  background: #52c41a;
+  color: #fff;
+  border-color: #52c41a;
+}
+.xy-button.success:hover {
+  background: #62e223;
+  color: #fff;
+  border-color: #6ae32e;
+}
+.xy-button.success:focus, .xy-button.success.focus {
+  background: #52c41a;
+  color: #fff;
+  border-color: #52c41a;
+  outline: none;
+}
+.xy-button.success:disabled {
+  background: #52c41a;
+  color: #fff;
+  border-color: #52c41a;
+}
+.xy-button.warning {
+  background: #ffb200;
+  color: #fff;
+  border-color: #ffb200;
+}
+.xy-button.warning:hover {
+  background: #ffbe26;
+  color: #fff;
+  border-color: #ffc133;
+}
+.xy-button.warning:focus, .xy-button.warning.focus {
+  background: #ffb200;
+  color: #fff;
+  border-color: #ffb200;
+  outline: none;
+}
+.xy-button.warning:disabled {
+  background: #ffb200;
+  color: #fff;
+  border-color: #ffb200;
+}
+.xy-button.danger {
+  background: #e6450f;
+  color: #fff;
+  border-color: #e6450f;
+}
+.xy-button.danger:hover {
+  background: #f15c2a;
+  color: #fff;
+  border-color: #f26536;
+}
+.xy-button.danger:focus, .xy-button.danger.focus {
+  background: #e6450f;
+  color: #fff;
+  border-color: #e6450f;
+  outline: none;
+}
+.xy-button.danger:disabled {
+  background: #e6450f;
+  color: #fff;
+  border-color: #e6450f;
+}
+.xy-button.block {
+  display: block;
+}
+.xy-button.dashed {
+  border-style: dashed;
 }

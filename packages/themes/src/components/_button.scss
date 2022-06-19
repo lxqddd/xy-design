@@ -92,4 +92,12 @@ $btn-types: (
 			}
 		}
 	}
+
+	&.block {
+		display: block;
+	}
+
+	&.dashed {
+		border-style: dashed;
+	}
 }
