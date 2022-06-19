@@ -4,10 +4,7 @@ import { sass } from '@stencil/sass'
 import { postcss } from '@stencil/postcss'
 import cssnano from 'cssnano'
 
-console.log('hello world')
-
 const globalStyle = path.resolve('../themes', 'lib/index.css')
-console.log(globalStyle)
 
 export const config: Config = {
   namespace: 'xy-design-components',
