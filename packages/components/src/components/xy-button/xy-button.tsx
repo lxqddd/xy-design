@@ -10,18 +10,22 @@ export class XyButton {
 	 * 按钮类型
 	 */
 	@Prop() type: Type = 'primary'
+
 	/**
 	 * 按钮尺寸
 	 */
 	@Prop() size: Size = 'medium'
+
 	/**
 	 * 是否将按钮展示为块级元素
 	 */
 	@Prop() block: boolean = false
+
 	/**
 	 * 是否是圆形按钮
 	 */
 	@Prop() circle: boolean = false
+
 	/**
 	 * 按钮颜色
 	 */
@@ -88,9 +92,9 @@ export class XyButton {
 	}
 	render() {
 		return (
-			<div class={this.classNames}>
+			<button class={this.classNames}>
 				<slot />
-			</div>
+			</button>
 		)
 	}
 }
