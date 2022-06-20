@@ -82,12 +82,12 @@ export class XyButton {
 			[`${this.type}`]: this.type,
 			[`${this.size}`]: this.size,
 			[`block`]: this.block,
-			[`${this.circle}`]: this.circle,
+			[`circle`]: this.circle,
 			[`dashed`]: this.dashed,
-			[`${this.disabled}`]: this.disabled,
-			[`${this.focusable}`]: this.focusable,
-			[`${this.ghost}`]: this.ghost,
-			[`${this.round}`]: this.round
+			[`disabled`]: this.disabled,
+			[`focusable`]: this.focusable,
+			[`ghost`]: this.ghost,
+			[`round`]: this.round
 		})
 	}
 	render() {
