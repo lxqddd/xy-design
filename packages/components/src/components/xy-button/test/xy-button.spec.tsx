@@ -52,4 +52,15 @@ describe('xy-button', () => {
       </xy-button>
     `)
 	})
+
+	it('should show as a round button when we set attr round', async () => {
+		const page = await newSpecPage({
+			components: [XyButton],
+			template: () => <xy-button round></xy-button>
+		})
+
+		expect(page.root).toEqualHtml(`
+      <xy-button class="xy-button primary medium round"></xy-button>
+    `)
+	})
 })
