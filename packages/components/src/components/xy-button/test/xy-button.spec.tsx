@@ -60,7 +60,9 @@ describe('xy-button', () => {
 		})
 
 		expect(page.root).toEqualHtml(`
-      <xy-button class="xy-button primary medium round"></xy-button>
+      <xy-button >
+        <button class="xy-button primary medium round"></button>
+      </xy-button>
     `)
 	})
 })
