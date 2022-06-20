@@ -521,3 +521,6 @@ main {
 .xy-button.dashed {
   border-style: dashed;
 }
+.xy-button.round {
+  border-radius: 50%;
+}
