@@ -44,7 +44,7 @@ export class XyButton {
 	/**
 	 * 按钮是否可以被聚焦
 	 */
-	@Prop() focusable: boolean = false
+	@Prop() focusable: boolean = true
 
 	/**
 	 * 按钮是否透明
@@ -85,7 +85,6 @@ export class XyButton {
 			[`circle`]: this.circle,
 			[`dashed`]: this.dashed,
 			[`disabled`]: this.disabled,
-			[`focusable`]: this.focusable,
 			[`ghost`]: this.ghost,
 			[`round`]: this.round
 		})
