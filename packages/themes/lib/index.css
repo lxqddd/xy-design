@@ -374,20 +374,32 @@ main {
   font-size: 0.75rem;
   border-radius: 0.15rem;
 }
+.xy-button.mini.round {
+  border-radius: 1.7rem;
+}
 .xy-button.small {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
+}
+.xy-button.small.round {
+  border-radius: 1.75rem;
 }
 .xy-button.medium {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
 }
+.xy-button.medium.round {
+  border-radius: 1.875rem;
+}
 .xy-button.large {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
+}
+.xy-button.large.round {
+  border-radius: 2rem;
 }
 .xy-button.default {
   background: #fff;

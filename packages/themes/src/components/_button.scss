@@ -69,13 +69,13 @@ $btn-types: (
 	@each $key, $val in $btn-sizes {
 		&.#{$key} {
 			@if $key == 'mini' {
-				@include btn-size($btn-padding-y-mini, $btn-padding-x-mini, $btn-font-size-mini, $btn-border-radius-mini);
+				@include btn-size($btn-padding-y-mini, $btn-padding-x-mini, $btn-font-size-mini, $btn-border-radius-mini, $btn-line-height);
 			} @else if $key == 'small' {
-				@include btn-size($btn-padding-y-small, $btn-padding-x-small, $btn-font-size-small, $btn-border-radius-small);
+				@include btn-size($btn-padding-y-small, $btn-padding-x-small, $btn-font-size-small, $btn-border-radius-small, $btn-line-height);
 			} @else if $key == 'medium' {
-				@include btn-size($btn-padding-y-medium, $btn-padding-x-medium, $btn-font-size-medium, $btn-border-radius-medium);
+				@include btn-size($btn-padding-y-medium, $btn-padding-x-medium, $btn-font-size-medium, $btn-border-radius-medium, $btn-line-height);
 			} @else {
-				@include btn-size($btn-padding-y-large, $btn-padding-x-large, $btn-font-size-large, $btn-border-radius-large);
+				@include btn-size($btn-padding-y-large, $btn-padding-x-large, $btn-font-size-large, $btn-border-radius-large, $btn-line-height);
 			}
 		}
 	}
