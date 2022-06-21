@@ -13,3 +13,5 @@ lerna bootstrap
 
 npm run dev
 ```
+
+When you are developing a new component, you should use it in index.html, which can facilitate your development.
