@@ -65,4 +65,25 @@ describe('xy-button', () => {
       </xy-button>
     `)
 	})
+
+	it('should has a class of disabled', async () => {
+		const page = await newSpecPage({
+			components: [XyButton],
+			template: () => <xy-button disabled></xy-button>
+		})
+		expect(page.root).toEqualHtml(`
+      <xy-button>
+        <button class="xy-button primary medium disabled"></button>
+      </xy-button>
+    `)
+	})
+
+	// it('click event should not be called when we set disabled attr', async () => {
+	// 	const page = await newSpecPage({
+	// 		components: [XyButton],
+	// 		template: () => <xy-button disabled></xy-button>
+	//   })
+
+	//   page.
+	// })
 })

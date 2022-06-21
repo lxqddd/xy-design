@@ -417,10 +417,16 @@ main {
   border-color: #ababab;
   outline: none;
 }
-.xy-button.default:disabled {
+.xy-button.default.disabled, .xy-button.default[disabled], .xy-button.default:disabled {
   background: #fff;
   color: #000;
   border-color: #ababab;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
+.xy-button.default.disabled > *, .xy-button.default[disabled] > *, .xy-button.default:disabled > * {
+  pointer-events: none;
 }
 .xy-button.primary {
   background: #1a8cff;
@@ -438,10 +444,16 @@ main {
   border-color: #1a8cff;
   outline: none;
 }
-.xy-button.primary:disabled {
+.xy-button.primary.disabled, .xy-button.primary[disabled], .xy-button.primary:disabled {
   background: #1a8cff;
   color: #fff;
   border-color: #1a8cff;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
+.xy-button.primary.disabled > *, .xy-button.primary[disabled] > *, .xy-button.primary:disabled > * {
+  pointer-events: none;
 }
 .xy-button.info {
   background: #909399;
@@ -459,10 +471,16 @@ main {
   border-color: #909399;
   outline: none;
 }
-.xy-button.info:disabled {
+.xy-button.info.disabled, .xy-button.info[disabled], .xy-button.info:disabled {
   background: #909399;
   color: #fff;
   border-color: #909399;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
+.xy-button.info.disabled > *, .xy-button.info[disabled] > *, .xy-button.info:disabled > * {
+  pointer-events: none;
 }
 .xy-button.success {
   background: #52c41a;
@@ -480,10 +498,16 @@ main {
   border-color: #52c41a;
   outline: none;
 }
-.xy-button.success:disabled {
+.xy-button.success.disabled, .xy-button.success[disabled], .xy-button.success:disabled {
   background: #52c41a;
   color: #fff;
   border-color: #52c41a;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
+.xy-button.success.disabled > *, .xy-button.success[disabled] > *, .xy-button.success:disabled > * {
+  pointer-events: none;
 }
 .xy-button.warning {
   background: #ffb200;
@@ -501,10 +525,16 @@ main {
   border-color: #ffb200;
   outline: none;
 }
-.xy-button.warning:disabled {
+.xy-button.warning.disabled, .xy-button.warning[disabled], .xy-button.warning:disabled {
   background: #ffb200;
   color: #fff;
   border-color: #ffb200;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
+.xy-button.warning.disabled > *, .xy-button.warning[disabled] > *, .xy-button.warning:disabled > * {
+  pointer-events: none;
 }
 .xy-button.danger {
   background: #e6450f;
@@ -522,10 +552,16 @@ main {
   border-color: #e6450f;
   outline: none;
 }
-.xy-button.danger:disabled {
+.xy-button.danger.disabled, .xy-button.danger[disabled], .xy-button.danger:disabled {
   background: #e6450f;
   color: #fff;
   border-color: #e6450f;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
+.xy-button.danger.disabled > *, .xy-button.danger[disabled] > *, .xy-button.danger:disabled > * {
+  pointer-events: none;
 }
 .xy-button.block {
   display: block;
